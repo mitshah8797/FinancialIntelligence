@@ -1,0 +1,9 @@
+$(function(){
+                $(".block-refresh-example").on("click",function(){
+                    var block = $(this).data("block");
+                    app.block.loading.start("#"+block);
+                    setTimeout(function(){
+                        app.block.loading.finish("#"+block);
+                    },3000);
+                });
+            });
