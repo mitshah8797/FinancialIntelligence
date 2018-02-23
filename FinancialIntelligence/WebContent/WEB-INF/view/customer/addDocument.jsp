@@ -55,7 +55,7 @@
 										<p>Upload!</p>
 									</div>
 								</div>
-								<form action="#" method="POST">
+								<form action="uploadFile.htm" method="POST" enctype="multipart/form-data">
 									<c:forEach items="${list }" var="v">
 										<div class="form-group">
 											<label>${v.docType.documentType }</label><span
@@ -64,7 +64,8 @@
 												type="file" class="file"
 												data-validation="required extension size"
 												data-validation-allowing="jpg, png, gif"
-												data-validation-max-size="2M">
+												data-validation-max-size="2M"
+												name="${v.docType.documentType }">
 										</div>
 									</c:forEach>
 									<div class="form-group margin-top-20">
