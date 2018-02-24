@@ -60,7 +60,8 @@
 										<div class="form-group">
 											<label>${v.docType.documentType }</label><span
 												class="help-block">Validate that file is an image of
-												type JPG, GIF or PNG and not larger than 2 mega bytes</span> <input
+												type JPG, GIF or PNG and not larger than 2 mega bytes</span> 
+												<input
 												type="file" class="file"
 												data-validation="required extension size"
 												data-validation-allowing="jpg, png, gif"

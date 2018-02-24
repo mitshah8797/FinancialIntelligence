@@ -32,6 +32,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 				<value>com.vo.UserVO</value>
 				<value>com.vo.DocumentTypeVO</value>
 				<value>com.vo.DocumentMappingVO</value>
+				<value>com.vo.UserDocumentVO</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
