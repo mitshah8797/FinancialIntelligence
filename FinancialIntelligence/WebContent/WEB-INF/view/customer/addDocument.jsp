@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +65,7 @@
 												data-validation="required extension size"
 												data-validation-allowing="jpg, png, gif"
 												data-validation-max-size="2M"
-												name="${v.docType.documentType }">
+												name="file">
 										</div>
 									</c:forEach>
 									<div class="form-group margin-top-20">

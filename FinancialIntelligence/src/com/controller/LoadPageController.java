@@ -18,7 +18,6 @@ import com.vo.LoanStaffVO;
 import com.vo.LoanTypeVO;
 import com.vo.PhysicalVerificationVO;
 import com.vo.PostVO;
-import com.vo.UserDocumentVO;
 import com.vo.UserVO;
 
 @Controller
@@ -78,7 +77,7 @@ public class LoadPageController {
 	@RequestMapping(value = "/loadAddDoc", method = RequestMethod.GET)
 	public ModelAndView loadAddDocument() throws SQLException {
 		List documentList = this.documentMappingDAO.getRelatedDocuments();
-		return new ModelAndView("customer/addDocument", "list", documentList).addObject(new UserDocumentVO());
+		return new ModelAndView("customer/addDocument", "list", documentList);
 	}
 	
 	@RequestMapping(value = "/loadAddUser", method = RequestMethod.GET)
